@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: #111;
     color: #fff;
@@ -48,6 +54,7 @@ footer p {
 body::before {
     content: "";
     background-image: url('halloween-gettyimages-1424736925.jpg');
+    background-size:cover ;
     position: fixed;
     top: 0;
     left: 0;
@@ -56,4 +63,26 @@ body::before {
     opacity: 0.2;
     z-index: -1;
 }
-
+.pumpkins{
+    display: flex;
+    align-items: center;
+}
+.pumpkin{
+    margin: auto;
+}
+.play{
+    width: 100px;
+    height: 50px;
+    color: white;
+    background-color: orange;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.play{
+    cursor: pointer;
+}
+#p,#pv{
+    background: none;
+    border: none;
+}
